@@ -25,6 +25,7 @@ Nesse perfil eu pretendo postar meus melhores trabalhos, podendo compartilhar um
 ---
 
 ![Lapo Bardotti's GitHub stats](https://github-readme-stats.vercel.app/api?username=Lapo-Bardotti&show_icons=true&theme=tokyonight&hide=contribs)
+![Lapo Bardotti's GitHub stats2](https://github-readme-stats.vercel.app/api/top-langs/?username=Lapo-Bardotti&theme=tokyonight)
 
 ---
 ### Minhas tecnologias preferidas!
