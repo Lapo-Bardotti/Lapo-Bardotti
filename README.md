@@ -27,7 +27,13 @@ Nesse perfil eu pretendo postar meus melhores trabalhos, podendo compartilhar um
 
 ---
 ### Minhas tecnologias preferidas!
-  
+
+![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)
+
+```
+System.out.print("Java... Ah, o java...");
+```
+Java é muito bom, apesar de dar um pouco de dor de cabeça as vezes. Realizei estudos principalmente envolvendo estrutura de dados e análise de algorítmos nessa linguagem, com certeza uma das mais importantes que temos hoje.
 
 ![JS](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
 ![NodeJS](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
@@ -36,13 +42,6 @@ Nesse perfil eu pretendo postar meus melhores trabalhos, podendo compartilhar um
 Console.log("Javascript e NodeJS") 
 ```
 Tenho um pouco de experiência com Javascript e Node JS, já utilizei bastante no desenvolvimento web, mas também curto usar JS para resolver problemas mais simples do cotidiano. 
-
-![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)
-
-```
-System.out.print("Java... Ah, o java...");
-```
-Java é muito bom, apesar de dar um pouco de dor de cabeça as vezes. Realizei estudos principalmente envolvendo estrutura de dados e análise de algorítmos nessa linguagem, com certeza uma das mais importantes que temos hoje.
 
 ![Python](https://img.shields.io/badge/Python-14354C?style=for-the-badge&logo=python&logoColor=white)
 
