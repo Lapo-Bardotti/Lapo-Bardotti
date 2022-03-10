@@ -2,7 +2,7 @@
 ---
 
 ### Quem sou eu?
-Sou estudante de ciência da computação pela universidade de Fortaleza(UNIFOR), atualmente no 3° Semestre. Estou sempre em busca de novos conhecimentos, e gosto muito do desafio de aprender coisas novas.
+Sou estudante de ciência da computação pela universidade de Fortaleza(UNIFOR), atualmente no 4° Semestre. Estou sempre em busca de novos conhecimentos, e gosto muito do desafio de aprender coisas novas.
 
 Nesse perfil eu pretendo postar meus melhores trabalhos, podendo compartilhar um pouco de minha evolução.
 
