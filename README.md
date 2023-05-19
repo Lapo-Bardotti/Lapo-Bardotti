@@ -1,48 +1,57 @@
-## Olá! Eu me chamo Lapo Bardotti.
----
+<table>
+    <tr>
+        <td><img src="https://github-readme-stats.vercel.app/api?username=Lapo-Bardotti&theme=tokyonight&hide_border=false&include_all_commits=true&count_private=true"></td>
+        <td><img src="https://github-readme-streak-stats.herokuapp.com/?user=Lapo-Bardotti&theme=tokyonight&hide_border=false"></td>
+    </tr>
+</table>
 
-### Quem sou eu?
-Sou estudante de ciência da computação pela universidade de Fortaleza(UNIFOR), atualmente no 6° Semestre. Estou sempre em busca de novos conhecimentos e gosto muito do desafio de aprender coisas novas.
+<table style="width:100%;">
+  <tr>
+    <th>Languages</th>
+    <th>Developer Tools</th>
+  </tr>
+  <tr>
+    <td>
+      <img src="https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white" />
+      <img src="https://img.shields.io/static/v1?label=&labelColor=505050&message=Typescript&color=3178C6&style=for-the-badge&logo=typescript" />
+      <img src="https://img.shields.io/static/v1?label=&labelColor=505050&message=Javascript&color=f0db4f&style=for-the-badge&logo=javascript&logoColor=f0db4f" />
+      <img src="https://img.shields.io/static/v1?label=&labelColor=505050&message=Bash&color=4EAA25&style=for-the-badge&logo=gnu-bash" />
+      <img src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54" />
+	  </td>
+    <td>
+      <img src="https://img.shields.io/static/v1?label=&labelColor=505050&message=Git&color=F05032&style=for-the-badge&logo=git" />
+      <img src="https://img.shields.io/static/v1?label=&labelColor=505050&message=NPM&color=CB3837&style=for-the-badge&logo=npm" />
+      <img src="https://img.shields.io/badge/yarn-%232C8EBB.svg?style=for-the-badge&logo=yarn&logoColor=white" />
+      <img src="https://img.shields.io/static/v1?label=&labelColor=505050&message=Postman&color=FF6C37&style=for-the-badge&logo=postman&logoColor=FF6C37" />
+      <img src="https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white" />
+      <img src="https://img.shields.io/badge/Obsidian-%23483699.svg?style=for-the-badge&logo=obsidian&logoColor=white" />
+    </td>
+	</tr>
+</table>
 
-Atuo como Desenvolvedor Web pela Statix, em Fortaleza. 
-
-Nesse perfil eu pretendo postar meus trabalhos pessoais.
-
---- 
-
-##### Me encontre em:
-
-[![Linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/lapobardotti
-) 
-[![Youtube](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/channel/UCH-8G2jJwmzJF71GFAKUXOw
-)
-[![Istagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/lapo.bardotti/
-) 
-
-
----
-
-![Lapo Bardotti's GitHub stats](https://github-readme-stats.vercel.app/api?username=Lapo-Bardotti&show_icons=true&theme=tokyonight&hide=contribs)
-![Lapo Bardotti's GitHub stats2](https://github-readme-stats.vercel.app/api/top-langs/?username=Lapo-Bardotti&theme=tokyonight)
-
----
-### Minhas tecnologias preferidas
-
-![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)
-
-```
-System.out.print("Java");
-```
-Java é muito bom, apesar de dar um pouco de dor de cabeça as vezes. Realizei estudos principalmente envolvendo estrutura de dados e análise de algorítmos nessa linguagem, com certeza uma das mais importantes que temos hoje.
-
-![JS](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
-![NodeJS](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
-
-```
-Console.log("Javascript e NodeJS") 
-```
-Tenho um pouco de experiência com Javascript e Node JS, já utilizei bastante no desenvolvimento web, mas também curto usar JS para resolver problemas mais simples do cotidiano. 
-
----
-
-##### email para contato: bardottilapo@gmail.com
+<table>
+     <tr>
+    <th>Frontend</th>
+    <th>Backend</th>
+  </tr>
+  <tr>
+    <td>      
+      <img src="https://img.shields.io/static/v1?label=&labelColor=505050&message=Next.js&color=000000&style=for-the-badge&logo=next.js" />
+      <img src="https://img.shields.io/static/v1?label=&labelColor=505050&message=React&color=61DAFB&style=for-the-badge&logo=react" />
+      <img src="https://img.shields.io/badge/angular.js-%23E23237.svg?style=for-the-badge&logo=angularjs&logoColor=white" />
+      <img src="https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white" />
+      <img src="https://img.shields.io/badge/bootstrap-%23563D7C.svg?style=for-the-badge&logo=bootstrap&logoColor=white" />
+      <img src="https://img.shields.io/static/v1?label=&labelColor=505050&message=Material-UI&color=0081CB&style=for-the-badge&logo=material-ui" />
+    </td>
+    <td>
+      <img src="https://img.shields.io/static/v1?label=&labelColor=505050&message=Node.js&color=339933&style=for-the-badge&logo=node.js" />
+      <img src="https://img.shields.io/static/v1?label=&labelColor=505050&message=.NET&color=512BD4&style=for-the-badge&logo=.net" />
+      <img src="https://img.shields.io/static/v1?label=&labelColor=505050&message=MongoDB&color=47A248&style=for-the-badge&logo=mongodb" />
+      <img src="https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white" />
+      <img src="https://img.shields.io/static/v1?label=&labelColor=505050&message=Prisma&color=2D3748&style=for-the-badge&logo=prisma" />
+      <img src="https://img.shields.io/static/v1?label=&labelColor=505050&message=Docker&color=2496ED&style=for-the-badge&logo=docker" />
+      <img src="https://img.shields.io/static/v1?label=&labelColor=505050&message=Linux&color=FCC624&style=for-the-badge&logo=linux" />
+      <img src="https://img.shields.io/badge/Fedora-294172?style=for-the-badge&logo=fedora&logoColor=white" />
+    </td>
+  </tr>
+</table>
