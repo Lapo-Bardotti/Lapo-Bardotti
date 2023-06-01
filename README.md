@@ -1,5 +1,9 @@
 <table>
     <tr>
+        <td><img src="https://github-readme-stats.vercel.app/api/top-langs?username=Lapo-Bardotti&show_icons=true&locale=en&layout=compact&theme=tokyonight" alt="ovi" />
+</td>	
+    </tr>
+    <tr>
         <td><img src="https://github-readme-stats.vercel.app/api?username=Lapo-Bardotti&theme=tokyonight&hide_border=false&include_all_commits=true&count_private=true"></td>
         <td><img src="https://github-readme-streak-stats.herokuapp.com/?user=Lapo-Bardotti&theme=tokyonight&hide_border=false"></td>
     </tr>
