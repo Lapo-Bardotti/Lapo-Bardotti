@@ -1,10 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="415" height="206" viewBox="0 0 415 206" role="img" aria-label="Monthly contribution rhythm">
+<svg xmlns="http://www.w3.org/2000/svg" width="415" height="206" viewBox="0 0 415 206" role="img" aria-label="Production impact">
   <style>
     :root{
       --bg:#ffffff; --fg:#0f172a; --muted:#6b7688;
       --glass-a:rgba(15,23,42,.055); --glass-b:rgba(15,23,42,.012);
       --line:rgba(15,23,42,.10); --spec:rgba(255,255,255,.95);
       --empty:rgba(15,23,42,.065); --grid:rgba(15,23,42,.07);
+      --track:rgba(15,23,42,.06);
       --a1:#4f7cf7; --a2:#8b5cf6; --blob:.16; --shadow:.07;
     }
     @media (prefers-color-scheme:dark){
@@ -13,27 +14,37 @@
         --glass-a:rgba(255,255,255,.072); --glass-b:rgba(255,255,255,.018);
         --line:rgba(255,255,255,.10); --spec:rgba(255,255,255,.55);
         --empty:rgba(255,255,255,.062); --grid:rgba(255,255,255,.06);
+        --track:rgba(255,255,255,.06);
         --a1:#7aa2f7; --a2:#a78bfa; --blob:.30; --shadow:.5;
       }
     }
     text{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans',Helvetica,Arial,sans-serif;text-rendering:geometricPrecision}
     .bg{fill:var(--bg)}
     .hair{fill:none;stroke:var(--line);stroke-width:1}
-    .grid{fill:none;stroke:var(--grid);stroke-width:1}
     .spec{fill:none;stroke:url(#specG);stroke-width:1}
+    .track{fill:var(--track)}
     .ga{stop-color:var(--glass-a)} .gb{stop-color:var(--glass-b)}
     .c1{stop-color:var(--a1)} .c2{stop-color:var(--a2)}
     .blob1{fill:var(--a1)} .blob2{fill:var(--a2)}
     .key{font-size:10px;font-weight:600;letter-spacing:.1em;fill:var(--muted)}
     .val{font-size:26px;font-weight:600;letter-spacing:-.02em;fill:var(--fg)}
+    .big{font-size:21px;font-weight:600;letter-spacing:-.02em;fill:var(--fg)}
     .sub{font-size:11px;font-weight:400;fill:var(--muted)}
     .ttl{font-size:12.5px;font-weight:600;letter-spacing:-.01em;fill:var(--fg)}
+    .row{font-size:11.5px;font-weight:500;fill:var(--fg)}
     .tick{font-size:9.5px;font-weight:500;fill:var(--muted)}
     .l0{fill:var(--empty)}
     .l1{fill:var(--a1);opacity:.30}
     .l2{fill:var(--a1);opacity:.55}
     .l3{fill:var(--a1);opacity:.80}
     .l4{fill:var(--a2);opacity:.95}
+    .s0{fill:var(--a1)}
+    .s1{fill:var(--a1);opacity:.74}
+    .s2{fill:var(--a1);opacity:.5}
+    .s3{fill:var(--a2);opacity:.88}
+    .s4{fill:var(--a2);opacity:.62}
+    .s5{fill:var(--a2);opacity:.42}
+    .s6{fill:var(--muted);opacity:.34}
   </style>
   <defs>
     <linearGradient id="glassG" x1="0" y1="0" x2="0" y2="1">
@@ -47,10 +58,6 @@
     <linearGradient id="accG" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0" class="c1"/><stop offset="1" class="c2"/>
     </linearGradient>
-    <linearGradient id="areaG" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" class="c1" stop-opacity=".45"/>
-      <stop offset="1" class="c1" stop-opacity="0"/>
-    </linearGradient>
     <filter id="soft" x="-60%" y="-60%" width="220%" height="220%">
       <feGaussianBlur stdDeviation="46"/>
     </filter>
@@ -59,23 +66,20 @@
     </filter>
   </defs>
 <g filter="url(#drop)"><rect x="0" y="0" width="415" height="206" rx="16" class="bg"/></g>
-  <clipPath id="clipact"><rect x="0" y="0" width="415" height="206" rx="16"/></clipPath>
-  <g clip-path="url(#clipact)">
+  <clipPath id="clipimp"><rect x="0" y="0" width="415" height="206" rx="16"/></clipPath>
+  <g clip-path="url(#clipimp)">
     <rect x="0" y="0" width="415" height="206" class="bg"/>
-    <g filter="url(#soft)"><circle cx="62.25" cy="24.72" r="78" class="blob1" opacity="var(--blob)"/><circle cx="373.5" cy="206" r="66" class="blob2" opacity="var(--blob)"/></g>
+    <g filter="url(#soft)"><circle cx="62.25" cy="24.72" r="78" class="blob2" opacity="var(--blob)"/><circle cx="373.5" cy="206" r="66" class="blob1" opacity="var(--blob)"/></g>
     <rect x="0" y="0" width="415" height="206" fill="url(#glassG)"/>
   </g>
   <rect x="0.5" y="0.5" width="414" height="205" rx="15.5" class="hair"/>
   <path d="M 16 0.5 H 399" class="spec"/>
-  <text x="22" y="30" class="ttl">Monthly rhythm</text>
-  <text x="22" y="48" class="sub">peak of 704 in Jul</text>
-  <clipPath id="clipArea"><rect x="0" y="64" width="415" height="108"/></clipPath>
-  <path d="M 22 172 H 393" class="grid"/>
-  <g clip-path="url(#clipArea)">
-    <path d="M 22 166.01 C 27.62 166.25, 44.48 167.15, 55.73 167.41 C 66.97 167.66, 78.21 167.34, 89.45 167.55 C 100.7 167.75, 111.94 170.89, 123.18 168.66 C 134.42 166.43, 145.67 157.89, 156.91 154.18 C 168.15 150.47, 179.39 145.6, 190.64 146.39 C 201.88 147.18, 213.12 159.24, 224.36 158.91 C 235.61 158.59, 246.85 152.63, 258.09 144.44 C 269.33 136.25, 280.58 113.58, 291.82 109.78 C 303.06 105.97, 314.3 127.57, 325.55 121.61 C 336.79 115.65, 348.03 73.42, 359.27 74 C 370.52 74.58, 387.38 116.57, 393 125.09 L 393 172 L 22 172 Z" fill="url(#areaG)"/>
-    <path d="M 22 166.01 C 27.62 166.25, 44.48 167.15, 55.73 167.41 C 66.97 167.66, 78.21 167.34, 89.45 167.55 C 100.7 167.75, 111.94 170.89, 123.18 168.66 C 134.42 166.43, 145.67 157.89, 156.91 154.18 C 168.15 150.47, 179.39 145.6, 190.64 146.39 C 201.88 147.18, 213.12 159.24, 224.36 158.91 C 235.61 158.59, 246.85 152.63, 258.09 144.44 C 269.33 136.25, 280.58 113.58, 291.82 109.78 C 303.06 105.97, 314.3 127.57, 325.55 121.61 C 336.79 115.65, 348.03 73.42, 359.27 74 C 370.52 74.58, 387.38 116.57, 393 125.09" fill="none" stroke="url(#accG)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-  </g>
-  <circle cx="359.27" cy="74" r="3" fill="var(--a2)"/>
-  <circle cx="359.27" cy="74" r="6" fill="none" stroke="var(--a2)" stroke-width="1" opacity=".45"/>
-  <text x="22" y="190" class="tick" text-anchor="middle">Sep</text><text x="123.18" y="190" class="tick" text-anchor="middle">Dec</text><text x="224.36" y="190" class="tick" text-anchor="middle">Mar</text><text x="325.55" y="190" class="tick" text-anchor="middle">Jun</text>
+  <text x="22" y="30" class="ttl">In production</text>
+  <text x="22" y="48" class="sub">LGPD compliant by design</text>
+  <text x="22" y="82" class="big">1,000+</text>
+  <text x="22" y="99" class="sub">doctors on the platforms</text>
+  <text x="22" y="123" class="big">~200</text>
+  <text x="22" y="140" class="sub">consults per week</text>
+  <text x="22" y="164" class="big">4</text>
+  <text x="22" y="181" class="sub">countries served · BR · US · ES · IT</text>
 </svg>
