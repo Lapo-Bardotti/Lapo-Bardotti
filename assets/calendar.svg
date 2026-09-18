@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="856" height="222" viewBox="0 0 856 222" role="img" aria-label="Contribution calendar">
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="222" viewBox="0 0 840 222" role="img" aria-label="Contribution calendar">
   <style>
     :root{
       --bg:#ffffff; --fg:#0f172a; --muted:#6b7688;
@@ -58,15 +58,15 @@
       <feDropShadow dx="0" dy="2" stdDeviation="6" flood-color="#0b1020" flood-opacity="var(--shadow)"/>
     </filter>
   </defs>
-<g filter="url(#drop)"><rect x="0" y="0" width="856" height="222" rx="16" class="bg"/></g>
-  <clipPath id="clipcal"><rect x="0" y="0" width="856" height="222" rx="16"/></clipPath>
+<g filter="url(#drop)"><rect x="0" y="0" width="840" height="222" rx="16" class="bg"/></g>
+  <clipPath id="clipcal"><rect x="0" y="0" width="840" height="222" rx="16"/></clipPath>
   <g clip-path="url(#clipcal)">
-    <rect x="0" y="0" width="856" height="222" class="bg"/>
-    <g filter="url(#soft)"><circle cx="68.48" cy="33.3" r="110" class="blob1" opacity="var(--blob)"/><circle cx="470.8" cy="233.1" r="95" class="blob2" opacity="var(--blob)"/><circle cx="813.2" cy="22.2" r="85" class="blob1" opacity="var(--blob)"/></g>
-    <rect x="0" y="0" width="856" height="222" fill="url(#glassG)"/>
+    <rect x="0" y="0" width="840" height="222" class="bg"/>
+    <g filter="url(#soft)"><circle cx="67.2" cy="33.3" r="110" class="blob1" opacity="var(--blob)"/><circle cx="462" cy="233.1" r="95" class="blob2" opacity="var(--blob)"/><circle cx="798" cy="22.2" r="85" class="blob1" opacity="var(--blob)"/></g>
+    <rect x="0" y="0" width="840" height="222" fill="url(#glassG)"/>
   </g>
-  <rect x="0.5" y="0.5" width="855" height="221" rx="15.5" class="hair"/>
-  <path d="M 16 0.5 H 840" class="spec"/>
+  <rect x="0.5" y="0.5" width="839" height="221" rx="15.5" class="hair"/>
+  <path d="M 16 0.5 H 824" class="spec"/>
   <text x="22" y="30" class="ttl">Contribution activity</text>
   <text x="22" y="48" class="sub">2,655 of 2,658 contributions (99%) live in private repositories</text>
   <text x="22" y="102.5" class="tick">M</text><text x="22" y="132.5" class="tick">W</text><text x="22" y="162.5" class="tick">F</text>
@@ -80,8 +80,8 @@
   <rect x="44" y="168" width="12" height="12" rx="3" class="l0"><title>2025-09-20: 0</title></rect>
   <rect x="59" y="78" width="12" height="12" rx="3" class="l0"><title>2025-09-21: 0</title></rect>
   <rect x="59" y="93" width="12" height="12" rx="3" class="l0"><title>2025-09-22: 0</title></rect>
-  <rect x="59" y="108" width="12" height="12" rx="3" class="l0"><title>2025-09-23: 0</title></rect>
-  <rect x="59" y="123" width="12" height="12" rx="3" class="l1"><title>2025-09-24: 1</title></rect>
+  <rect x="59" y="108" width="12" height="12" rx="3" class="l1"><title>2025-09-23: 1</title></rect>
+  <rect x="59" y="123" width="12" height="12" rx="3" class="l0"><title>2025-09-24: 0</title></rect>
   <rect x="59" y="138" width="12" height="12" rx="3" class="l0"><title>2025-09-25: 0</title></rect>
   <rect x="59" y="153" width="12" height="12" rx="3" class="l1"><title>2025-09-26: 1</title></rect>
   <rect x="59" y="168" width="12" height="12" rx="3" class="l0"><title>2025-09-27: 0</title></rect>
@@ -441,7 +441,7 @@
   <rect x="824" y="123" width="12" height="12" rx="3" class="l0"><title>2026-09-16: 0</title></rect>
   <rect x="824" y="138" width="12" height="12" rx="3" class="l3"><title>2026-09-17: 19</title></rect>
   <rect x="824" y="153" width="12" height="12" rx="3" class="l2"><title>2026-09-18: 8</title></rect>
-  <text x="713" y="204.5" class="tick" text-anchor="end">Less</text>
-  <rect x="722" y="195" width="12" height="12" rx="3" class="l0"/><rect x="738" y="195" width="12" height="12" rx="3" class="l1"/><rect x="754" y="195" width="12" height="12" rx="3" class="l2"/><rect x="770" y="195" width="12" height="12" rx="3" class="l3"/><rect x="786" y="195" width="12" height="12" rx="3" class="l4"/>
-  <text x="807" y="204.5" class="tick">More</text>
+  <text x="697" y="204.5" class="tick" text-anchor="end">Less</text>
+  <rect x="706" y="195" width="12" height="12" rx="3" class="l0"/><rect x="722" y="195" width="12" height="12" rx="3" class="l1"/><rect x="738" y="195" width="12" height="12" rx="3" class="l2"/><rect x="754" y="195" width="12" height="12" rx="3" class="l3"/><rect x="770" y="195" width="12" height="12" rx="3" class="l4"/>
+  <text x="791" y="204.5" class="tick">More</text>
 </svg>

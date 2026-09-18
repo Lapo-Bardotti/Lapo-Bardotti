@@ -253,10 +253,12 @@ ${body}
 
 /* ----------------------------------------------------------------- cards -- */
 
-// sized for the profile README column, which is narrower than a repo README;
-// the two half cards plus one inline space must stay under it or they wrap
-const W = 856;
-const HALF = 425;
+// The profile README column measures 846px on desktop, narrower than a repo
+// README. Two half cards plus the inline space between them have to fit inside
+// that or the browser wraps them onto separate lines; the slack absorbs browser
+// zoom and font-size differences.
+const W = 840;
+const HALF = 415;
 const GAP = 14;
 
 function summaryCard(d) {

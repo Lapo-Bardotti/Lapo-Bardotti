@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="425" height="206" viewBox="0 0 425 206" role="img" aria-label="Contributions by weekday">
+<svg xmlns="http://www.w3.org/2000/svg" width="415" height="206" viewBox="0 0 415 206" role="img" aria-label="Contributions by weekday">
   <style>
     :root{
       --bg:#ffffff; --fg:#0f172a; --muted:#6b7688;
@@ -58,30 +58,30 @@
       <feDropShadow dx="0" dy="2" stdDeviation="6" flood-color="#0b1020" flood-opacity="var(--shadow)"/>
     </filter>
   </defs>
-<g filter="url(#drop)"><rect x="0" y="0" width="425" height="206" rx="16" class="bg"/></g>
-  <clipPath id="clipwd"><rect x="0" y="0" width="425" height="206" rx="16"/></clipPath>
+<g filter="url(#drop)"><rect x="0" y="0" width="415" height="206" rx="16" class="bg"/></g>
+  <clipPath id="clipwd"><rect x="0" y="0" width="415" height="206" rx="16"/></clipPath>
   <g clip-path="url(#clipwd)">
-    <rect x="0" y="0" width="425" height="206" class="bg"/>
-    <g filter="url(#soft)"><circle cx="51" cy="20.6" r="72" class="blob2" opacity="var(--blob)"/><circle cx="374" cy="210.12" r="70" class="blob1" opacity="var(--blob)"/></g>
-    <rect x="0" y="0" width="425" height="206" fill="url(#glassG)"/>
+    <rect x="0" y="0" width="415" height="206" class="bg"/>
+    <g filter="url(#soft)"><circle cx="49.8" cy="20.6" r="72" class="blob2" opacity="var(--blob)"/><circle cx="365.2" cy="210.12" r="70" class="blob1" opacity="var(--blob)"/></g>
+    <rect x="0" y="0" width="415" height="206" fill="url(#glassG)"/>
   </g>
-  <rect x="0.5" y="0.5" width="424" height="205" rx="15.5" class="hair"/>
-  <path d="M 16 0.5 H 409" class="spec"/>
+  <rect x="0.5" y="0.5" width="414" height="205" rx="15.5" class="hair"/>
+  <path d="M 16 0.5 H 399" class="spec"/>
   <text x="22" y="30" class="ttl">Weekly shape</text>
   <text x="22" y="48" class="sub">Monday carries the most work</text>
-  <path d="M 22 172 H 403" class="grid"/>
-  <rect x="41.21" y="123.03" width="16" height="48.97" rx="5" fill="var(--a1)" opacity="0.34"><title>Sunday: 298</title></rect>
-  <text x="49.21" y="190" class="tick" text-anchor="middle">S</text>
-  <rect x="95.64" y="78" width="16" height="94" rx="5" fill="url(#accG)" opacity="1"><title>Monday: 572</title></rect>
-  <text x="103.64" y="190" class="tick" text-anchor="middle">M</text>
-  <rect x="150.07" y="83.75" width="16" height="88.25" rx="5" fill="var(--a1)" opacity="0.34"><title>Tuesday: 537</title></rect>
-  <text x="158.07" y="190" class="tick" text-anchor="middle">T</text>
-  <rect x="204.5" y="110.05" width="16" height="61.95" rx="5" fill="var(--a1)" opacity="0.34"><title>Wednesday: 377</title></rect>
-  <text x="212.5" y="190" class="tick" text-anchor="middle">W</text>
-  <rect x="258.93" y="103.8" width="16" height="68.2" rx="5" fill="var(--a1)" opacity="0.34"><title>Thursday: 415</title></rect>
-  <text x="266.93" y="190" class="tick" text-anchor="middle">T</text>
-  <rect x="313.36" y="118.92" width="16" height="53.08" rx="5" fill="var(--a1)" opacity="0.34"><title>Friday: 323</title></rect>
-  <text x="321.36" y="190" class="tick" text-anchor="middle">F</text>
-  <rect x="367.79" y="149.65" width="16" height="22.35" rx="5" fill="var(--a1)" opacity="0.34"><title>Saturday: 136</title></rect>
-  <text x="375.79" y="190" class="tick" text-anchor="middle">S</text>
+  <path d="M 22 172 H 393" class="grid"/>
+  <rect x="40.5" y="123.03" width="16" height="48.97" rx="5" fill="var(--a1)" opacity="0.34"><title>Sunday: 298</title></rect>
+  <text x="48.5" y="190" class="tick" text-anchor="middle">S</text>
+  <rect x="93.5" y="78" width="16" height="94" rx="5" fill="url(#accG)" opacity="1"><title>Monday: 572</title></rect>
+  <text x="101.5" y="190" class="tick" text-anchor="middle">M</text>
+  <rect x="146.5" y="83.59" width="16" height="88.41" rx="5" fill="var(--a1)" opacity="0.34"><title>Tuesday: 538</title></rect>
+  <text x="154.5" y="190" class="tick" text-anchor="middle">T</text>
+  <rect x="199.5" y="110.21" width="16" height="61.79" rx="5" fill="var(--a1)" opacity="0.34"><title>Wednesday: 376</title></rect>
+  <text x="207.5" y="190" class="tick" text-anchor="middle">W</text>
+  <rect x="252.5" y="103.8" width="16" height="68.2" rx="5" fill="var(--a1)" opacity="0.34"><title>Thursday: 415</title></rect>
+  <text x="260.5" y="190" class="tick" text-anchor="middle">T</text>
+  <rect x="305.5" y="118.92" width="16" height="53.08" rx="5" fill="var(--a1)" opacity="0.34"><title>Friday: 323</title></rect>
+  <text x="313.5" y="190" class="tick" text-anchor="middle">F</text>
+  <rect x="358.5" y="149.65" width="16" height="22.35" rx="5" fill="var(--a1)" opacity="0.34"><title>Saturday: 136</title></rect>
+  <text x="366.5" y="190" class="tick" text-anchor="middle">S</text>
 </svg>
