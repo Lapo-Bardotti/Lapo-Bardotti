@@ -427,8 +427,7 @@ function calendarCard(d) {
   return svg(W, h, body, 'Contribution calendar');
 }
 
-function impactCard() {
-  const h = 206;
+function impactPanel(x, w, h) {
   const blobs = [
     { x: 0.15, y: 0.12, r: 78, c: 'blob2' },
     { x: 0.9, y: 1.0, r: 66, c: 'blob1' },
@@ -436,19 +435,17 @@ function impactCard() {
   const rows = IMPACT.rows
     .map((r, i) => {
       const y = 82 + i * 41;
-      return `<text x="${PAD}" y="${y}" class="big">${esc(r.value)}</text>
-  <text x="${PAD}" y="${y + 17}" class="sub">${esc(r.label)}</text>`;
+      return `<text x="${x + PAD}" y="${y}" class="big">${esc(r.value)}</text>
+  <text x="${x + PAD}" y="${y + 17}" class="sub">${esc(r.label)}</text>`;
     })
     .join('\n  ');
-  const body = `${glass(0, 0, HALF, h, blobs, 'imp')}
-  <text x="${PAD}" y="30" class="ttl">${esc(IMPACT.title)}</text>
-  <text x="${PAD}" y="48" class="sub">${esc(IMPACT.note)}</text>
+  return `${glass(x, 0, w, h, blobs, 'imp')}
+  <text x="${x + PAD}" y="30" class="ttl">${esc(IMPACT.title)}</text>
+  <text x="${x + PAD}" y="48" class="sub">${esc(IMPACT.note)}</text>
   ${rows}`;
-  return svg(HALF, h, body, 'Production impact');
 }
 
-function stackCard(insights) {
-  const h = 206;
+function stackPanel(x, w, h, insights) {
   const blobs = [
     { x: 0.12, y: 0.1, r: 72, c: 'blob1' },
     { x: 0.88, y: 1.02, r: 70, c: 'blob2' },
@@ -458,35 +455,47 @@ function stackCard(insights) {
     const rows = STACK_FALLBACK.rows
       .map(([label, value], i) => {
         const y = 80 + i * 24;
-        return `<text x="${PAD}" y="${y}" class="key">${esc(label.toUpperCase())}</text>
-  <text x="${PAD + 74}" y="${y}" class="row">${esc(value)}</text>`;
+        return `<text x="${x + PAD}" y="${y}" class="key">${esc(label.toUpperCase())}</text>
+  <text x="${x + PAD + 74}" y="${y}" class="row">${esc(value)}</text>`;
       })
       .join('\n  ');
-    const body = `${glass(0, 0, HALF, h, blobs, 'stk')}
-  <text x="${PAD}" y="30" class="ttl">${esc(STACK_FALLBACK.title)}</text>
-  <text x="${PAD}" y="48" class="sub">declared, not measured</text>
+    return `${glass(x, 0, w, h, blobs, 'stk')}
+  <text x="${x + PAD}" y="30" class="ttl">${esc(STACK_FALLBACK.title)}</text>
+  <text x="${x + PAD}" y="48" class="sub">declared, not measured</text>
   ${rows}`;
-    return svg(HALF, h, body, 'Stack in production');
   }
 
-  const barX = 108;
-  const barW = HALF - PAD - 44 - barX;
+  const barX = x + 108;
+  const barW = w - PAD - 44 - 108;
   const rows = insights.languages
     .map((lang, i) => {
       const y = 76 + i * 21;
-      const w = Math.max(3, lang.share * barW);
-      return `<text x="${PAD}" y="${y + 8}" class="row">${esc(lang.name)}</text>
+      const filled = Math.max(3, lang.share * barW);
+      return `<text x="${x + PAD}" y="${y + 8}" class="row">${esc(lang.name)}</text>
   <rect x="${barX}" y="${y}" width="${barW}" height="8" rx="4" class="track"/>
-  <rect x="${barX}" y="${y}" width="${round(w)}" height="8" rx="4" fill="url(#accG)"/>
-  <text x="${HALF - PAD}" y="${y + 8}" class="tick" text-anchor="end">${(lang.share * 100).toFixed(1)}%</text>`;
+  <rect x="${barX}" y="${y}" width="${round(filled)}" height="8" rx="4" fill="url(#accG)"/>
+  <text x="${x + w - PAD}" y="${y + 8}" class="tick" text-anchor="end">${(lang.share * 100).toFixed(1)}%</text>`;
     })
     .join('\n  ');
 
-  const body = `${glass(0, 0, HALF, h, blobs, 'stk')}
-  <text x="${PAD}" y="30" class="ttl">Languages by volume</text>
-  <text x="${PAD}" y="48" class="sub">across ${n(insights.totalRepos)} repositories, ${n(insights.privateRepos)} of them private</text>
+  return `${glass(x, 0, w, h, blobs, 'stk')}
+  <text x="${x + PAD}" y="30" class="ttl">Languages by volume</text>
+  <text x="${x + PAD}" y="48" class="sub">across ${n(insights.totalRepos)} repositories, ${n(insights.privateRepos)} private</text>
   ${rows}`;
-  return svg(HALF, h, body, 'Languages by volume');
+}
+
+/**
+ * Both panels live in one SVG. Two separate images would have to fit the README
+ * column side by side, and that column changes width with the window, the zoom
+ * and the device pixel ratio; when they do not fit, the browser silently drops
+ * one onto the next line. A single image cannot wrap.
+ */
+function insightsCard(insights) {
+  const h = 206;
+  const panelW = (W - GAP) / 2;
+  const body = `${impactPanel(0, panelW, h)}
+${stackPanel(panelW + GAP, panelW, h, insights)}`;
+  return svg(W, h, body, 'Production impact and stack');
 }
 
 function commitsCard(insights) {
@@ -552,8 +561,7 @@ await mkdir(OUT_DIR, { recursive: true });
 const files = {
   'summary.svg': summaryCard(data, insights),
   'calendar.svg': calendarCard(data),
-  'impact.svg': impactCard(),
-  'stack.svg': stackCard(insights),
+  'insights.svg': insightsCard(insights),
 };
 const commits = insights.available ? commitsCard(insights) : null;
 if (commits) files['commits.svg'] = commits;
@@ -562,7 +570,7 @@ for (const [name, content] of Object.entries(files)) {
   await writeFile(new URL(name, `file://${OUT_DIR}`), content, 'utf8');
 }
 // cards that earlier versions produced and the README no longer references
-for (const stale of ['activity.svg', 'weekday.svg']) {
+for (const stale of ['activity.svg', 'weekday.svg', 'impact.svg', 'stack.svg']) {
   await rm(new URL(stale, `file://${OUT_DIR}`), { force: true });
 }
 

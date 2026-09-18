@@ -6,25 +6,6 @@
 
 [LinkedIn](https://linkedin.com/in/lapobardotti) &nbsp;·&nbsp; [bardottilapo@gmail.com](mailto:bardottilapo@gmail.com)
 
-<br>
-
-<img src="assets/summary.svg" alt="Contribution summary">
-
-<img src="assets/calendar.svg" alt="Contribution calendar for the last 12 months">
-
-<img src="assets/impact.svg" alt="Production impact"> <img src="assets/stack.svg" alt="Stack in production">
-
-<!--
-  ▸ Depois de criar o secret CARDS_TOKEN, descomente a linha abaixo.
-    O card de tipos de commit passa a ser gerado no run diário.
-
-<img src="assets/commits.svg" alt="Commit type breakdown">
--->
-
-<br>
-
-### About
-
 Senior software engineer at **Statix**, a Brazilian fintech, working on a payment reconciliation
 platform that handles millions in transaction volume. I moved its infrastructure to Docker, GitHub
 Actions and GHCR, replacing manual SSH deploys, and I lead **Statix Studio**, an internal AI
@@ -34,8 +15,21 @@ In January 2026 I founded **BRDCO**, a software studio that delivers products en
 architecture, backend, frontend, mobile, design and infrastructure. Largest client is
 **Grupo Arcmed**, where I run the technology area. Everything there is LGPD compliant by design.
 
-Nearly all of this work lives in private repositories, which is why the numbers above carry the
+Nearly all of this work lives in private repositories, which is why the numbers below carry the
 weight here instead of a wall of pinned repos.
+
+<img src="assets/summary.svg" alt="Contribution summary">
+
+<img src="assets/calendar.svg" alt="Contribution calendar for the last 12 months">
+
+<img src="assets/insights.svg" alt="Production impact and stack">
+
+<!--
+  ▸ Depois de criar o secret CARDS_TOKEN, descomente a linha abaixo.
+    O card de tipos de commit passa a ser gerado no run diário.
+
+<img src="assets/commits.svg" alt="Commit type breakdown">
+-->
 
 ### Building right now
 
