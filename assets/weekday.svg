@@ -74,13 +74,13 @@
   <text x="48.5" y="190" class="tick" text-anchor="middle">S</text>
   <rect x="93.5" y="78" width="16" height="94" rx="5" fill="url(#accG)" opacity="1"><title>Monday: 572</title></rect>
   <text x="101.5" y="190" class="tick" text-anchor="middle">M</text>
-  <rect x="146.5" y="83.59" width="16" height="88.41" rx="5" fill="var(--a1)" opacity="0.34"><title>Tuesday: 538</title></rect>
+  <rect x="146.5" y="83.75" width="16" height="88.25" rx="5" fill="var(--a1)" opacity="0.34"><title>Tuesday: 537</title></rect>
   <text x="154.5" y="190" class="tick" text-anchor="middle">T</text>
-  <rect x="199.5" y="110.21" width="16" height="61.79" rx="5" fill="var(--a1)" opacity="0.34"><title>Wednesday: 376</title></rect>
+  <rect x="199.5" y="110.05" width="16" height="61.95" rx="5" fill="var(--a1)" opacity="0.34"><title>Wednesday: 377</title></rect>
   <text x="207.5" y="190" class="tick" text-anchor="middle">W</text>
   <rect x="252.5" y="103.8" width="16" height="68.2" rx="5" fill="var(--a1)" opacity="0.34"><title>Thursday: 415</title></rect>
   <text x="260.5" y="190" class="tick" text-anchor="middle">T</text>
-  <rect x="305.5" y="118.92" width="16" height="53.08" rx="5" fill="var(--a1)" opacity="0.34"><title>Friday: 323</title></rect>
+  <rect x="305.5" y="118.76" width="16" height="53.24" rx="5" fill="var(--a1)" opacity="0.34"><title>Friday: 324</title></rect>
   <text x="313.5" y="190" class="tick" text-anchor="middle">F</text>
   <rect x="358.5" y="149.65" width="16" height="22.35" rx="5" fill="var(--a1)" opacity="0.34"><title>Saturday: 136</title></rect>
   <text x="366.5" y="190" class="tick" text-anchor="middle">S</text>
