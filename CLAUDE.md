@@ -20,11 +20,13 @@ CARDS_OUT=/tmp/preview GH_TOKEN=$(gh auth token) GH_USER=Lapo-Bardotti node scri
 
 ## Regras
 
-- **Largura**: a coluna do README de perfil mede 846px, mais estreita que a de repositório.
-  Cards full = 840, metade = 415. Dois cards de metade mais o espaço inline entre eles têm de
-  caber em 846 ou o browser quebra a linha.
+- **Uma imagem por linha, sempre 840px.** Nunca colocar dois `<img>` lado a lado no README.
+  A largura da coluna não é constante: muda com a janela, o zoom e o DPI (medida em 846px numa
+  máquina e ~825px em outra). Quando duas imagens mais o espaço entre elas passam da coluna, o
+  browser joga uma para a linha de baixo, sem aviso. Para dois cards lado a lado, desenhar os dois
+  como **painéis dentro do mesmo SVG** (ver `insightsCard`, `summaryCard`) — uma imagem não quebra.
 - **Nada de `<table>` no README**: o GitHub força `border: 1px` em `td`/`th` e remove atributos
-  `style`, então tabela sempre aparece com borda. Usar imagens inline, que ainda empilham no mobile.
+  `style`, então tabela sempre aparece com borda.
 - **Fonte**: `@import` de fonte não funciona em SVG dentro do GitHub. Usar a font stack do sistema,
   que é a mesma do GitHub e dá o aspecto nativo.
 - **Tema**: cada SVG traz `@media (prefers-color-scheme: dark)` no próprio `<style>`. Isso segue o
