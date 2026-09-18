@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="856" height="116" viewBox="0 0 856 116" role="img" aria-label="2,657 contributions in the last 12 months">
+  <style>
+    :root{
+      --bg:#ffffff; --fg:#0f172a; --muted:#6b7688;
+      --glass-a:rgba(15,23,42,.055); --glass-b:rgba(15,23,42,.012);
+      --line:rgba(15,23,42,.10); --spec:rgba(255,255,255,.95);
+      --empty:rgba(15,23,42,.065); --grid:rgba(15,23,42,.07);
+      --a1:#4f7cf7; --a2:#8b5cf6; --blob:.16; --shadow:.07;
+    }
+    @media (prefers-color-scheme:dark){
+      :root{
+        --bg:#0b0e13; --fg:#e7eaf0; --muted:#8a94a6;
+        --glass-a:rgba(255,255,255,.072); --glass-b:rgba(255,255,255,.018);
+        --line:rgba(255,255,255,.10); --spec:rgba(255,255,255,.55);
+        --empty:rgba(255,255,255,.062); --grid:rgba(255,255,255,.06);
+        --a1:#7aa2f7; --a2:#a78bfa; --blob:.30; --shadow:.5;
+      }
+    }
+    text{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans',Helvetica,Arial,sans-serif;text-rendering:geometricPrecision}
+    .bg{fill:var(--bg)}
+    .hair{fill:none;stroke:var(--line);stroke-width:1}
+    .grid{fill:none;stroke:var(--grid);stroke-width:1}
+    .spec{fill:none;stroke:url(#specG);stroke-width:1}
+    .ga{stop-color:var(--glass-a)} .gb{stop-color:var(--glass-b)}
+    .c1{stop-color:var(--a1)} .c2{stop-color:var(--a2)}
+    .blob1{fill:var(--a1)} .blob2{fill:var(--a2)}
+    .key{font-size:10px;font-weight:600;letter-spacing:.1em;fill:var(--muted)}
+    .val{font-size:26px;font-weight:600;letter-spacing:-.02em;fill:var(--fg)}
+    .sub{font-size:11px;font-weight:400;fill:var(--muted)}
+    .ttl{font-size:12.5px;font-weight:600;letter-spacing:-.01em;fill:var(--fg)}
+    .tick{font-size:9.5px;font-weight:500;fill:var(--muted)}
+    .l0{fill:var(--empty)}
+    .l1{fill:var(--a1);opacity:.30}
+    .l2{fill:var(--a1);opacity:.55}
+    .l3{fill:var(--a1);opacity:.80}
+    .l4{fill:var(--a2);opacity:.95}
+  </style>
+  <defs>
+    <linearGradient id="glassG" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" class="ga"/><stop offset="1" class="gb"/>
+    </linearGradient>
+    <linearGradient id="specG" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="var(--spec)" stop-opacity="0"/>
+      <stop offset=".5" stop-color="var(--spec)" stop-opacity=".7"/>
+      <stop offset="1" stop-color="var(--spec)" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="accG" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" class="c1"/><stop offset="1" class="c2"/>
+    </linearGradient>
+    <linearGradient id="areaG" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" class="c1" stop-opacity=".45"/>
+      <stop offset="1" class="c1" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="soft" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="46"/>
+    </filter>
+    <filter id="drop" x="-20%" y="-30%" width="140%" height="180%">
+      <feDropShadow dx="0" dy="2" stdDeviation="6" flood-color="#0b1020" flood-opacity="var(--shadow)"/>
+    </filter>
+  </defs>
+<g filter="url(#drop)"><rect x="0" y="0" width="203.5" height="116" rx="16" class="bg"/></g>
+  <clipPath id="clips0"><rect x="0" y="0" width="203.5" height="116" rx="16"/></clipPath>
+  <g clip-path="url(#clips0)">
+    <rect x="0" y="0" width="203.5" height="116" class="bg"/>
+    <g filter="url(#soft)"><circle cx="36.63" cy="11.6" r="60" class="blob1" opacity="var(--blob)"/><circle cx="175.01" cy="116" r="52" class="blob2" opacity="var(--blob)"/></g>
+    <rect x="0" y="0" width="203.5" height="116" fill="url(#glassG)"/>
+  </g>
+  <rect x="0.5" y="0.5" width="202.5" height="115" rx="15.5" class="hair"/>
+  <path d="M 16 0.5 H 187.5" class="spec"/>
+  <text x="22" y="30" class="key">CONTRIBUTIONS</text>
+  <text x="22" y="68" class="val">2,657</text>
+  <text x="22" y="89" class="sub">last 12 months</text>
+<g filter="url(#drop)"><rect x="217.5" y="0" width="203.5" height="116" rx="16" class="bg"/></g>
+  <clipPath id="clips1"><rect x="217.5" y="0" width="203.5" height="116" rx="16"/></clipPath>
+  <g clip-path="url(#clips1)">
+    <rect x="217.5" y="0" width="203.5" height="116" class="bg"/>
+    <g filter="url(#soft)"><circle cx="254.13" cy="11.6" r="60" class="blob1" opacity="var(--blob)"/><circle cx="392.51" cy="116" r="52" class="blob2" opacity="var(--blob)"/></g>
+    <rect x="217.5" y="0" width="203.5" height="116" fill="url(#glassG)"/>
+  </g>
+  <rect x="218" y="0.5" width="202.5" height="115" rx="15.5" class="hair"/>
+  <path d="M 233.5 0.5 H 405" class="spec"/>
+  <text x="239.5" y="30" class="key">ACTIVE DAYS</text>
+  <text x="239.5" y="68" class="val">198</text>
+  <text x="239.5" y="89" class="sub">of 370 tracked</text>
+<g filter="url(#drop)"><rect x="435" y="0" width="203.5" height="116" rx="16" class="bg"/></g>
+  <clipPath id="clips2"><rect x="435" y="0" width="203.5" height="116" rx="16"/></clipPath>
+  <g clip-path="url(#clips2)">
+    <rect x="435" y="0" width="203.5" height="116" class="bg"/>
+    <g filter="url(#soft)"><circle cx="471.63" cy="11.6" r="60" class="blob1" opacity="var(--blob)"/><circle cx="610.01" cy="116" r="52" class="blob2" opacity="var(--blob)"/></g>
+    <rect x="435" y="0" width="203.5" height="116" fill="url(#glassG)"/>
+  </g>
+  <rect x="435.5" y="0.5" width="202.5" height="115" rx="15.5" class="hair"/>
+  <path d="M 451 0.5 H 622.5" class="spec"/>
+  <text x="457" y="30" class="key">LONGEST STREAK</text>
+  <text x="457" y="68" class="val">28</text>
+  <text x="457" y="89" class="sub">consecutive days</text>
+<g filter="url(#drop)"><rect x="652.5" y="0" width="203.5" height="116" rx="16" class="bg"/></g>
+  <clipPath id="clips3"><rect x="652.5" y="0" width="203.5" height="116" rx="16"/></clipPath>
+  <g clip-path="url(#clips3)">
+    <rect x="652.5" y="0" width="203.5" height="116" class="bg"/>
+    <g filter="url(#soft)"><circle cx="689.13" cy="11.6" r="60" class="blob1" opacity="var(--blob)"/><circle cx="827.51" cy="116" r="52" class="blob2" opacity="var(--blob)"/></g>
+    <rect x="652.5" y="0" width="203.5" height="116" fill="url(#glassG)"/>
+  </g>
+  <rect x="653" y="0.5" width="202.5" height="115" rx="15.5" class="hair"/>
+  <path d="M 668.5 0.5 H 840" class="spec"/>
+  <text x="674.5" y="30" class="key">SINCE 2019</text>
+  <text x="674.5" y="68" class="val">3,158</text>
+  <text x="674.5" y="89" class="sub">contributions total</text>
+</svg>

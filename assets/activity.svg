@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="425" height="206" viewBox="0 0 425 206" role="img" aria-label="Monthly contribution rhythm">
+  <style>
+    :root{
+      --bg:#ffffff; --fg:#0f172a; --muted:#6b7688;
+      --glass-a:rgba(15,23,42,.055); --glass-b:rgba(15,23,42,.012);
+      --line:rgba(15,23,42,.10); --spec:rgba(255,255,255,.95);
+      --empty:rgba(15,23,42,.065); --grid:rgba(15,23,42,.07);
+      --a1:#4f7cf7; --a2:#8b5cf6; --blob:.16; --shadow:.07;
+    }
+    @media (prefers-color-scheme:dark){
+      :root{
+        --bg:#0b0e13; --fg:#e7eaf0; --muted:#8a94a6;
+        --glass-a:rgba(255,255,255,.072); --glass-b:rgba(255,255,255,.018);
+        --line:rgba(255,255,255,.10); --spec:rgba(255,255,255,.55);
+        --empty:rgba(255,255,255,.062); --grid:rgba(255,255,255,.06);
+        --a1:#7aa2f7; --a2:#a78bfa; --blob:.30; --shadow:.5;
+      }
+    }
+    text{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans',Helvetica,Arial,sans-serif;text-rendering:geometricPrecision}
+    .bg{fill:var(--bg)}
+    .hair{fill:none;stroke:var(--line);stroke-width:1}
+    .grid{fill:none;stroke:var(--grid);stroke-width:1}
+    .spec{fill:none;stroke:url(#specG);stroke-width:1}
+    .ga{stop-color:var(--glass-a)} .gb{stop-color:var(--glass-b)}
+    .c1{stop-color:var(--a1)} .c2{stop-color:var(--a2)}
+    .blob1{fill:var(--a1)} .blob2{fill:var(--a2)}
+    .key{font-size:10px;font-weight:600;letter-spacing:.1em;fill:var(--muted)}
+    .val{font-size:26px;font-weight:600;letter-spacing:-.02em;fill:var(--fg)}
+    .sub{font-size:11px;font-weight:400;fill:var(--muted)}
+    .ttl{font-size:12.5px;font-weight:600;letter-spacing:-.01em;fill:var(--fg)}
+    .tick{font-size:9.5px;font-weight:500;fill:var(--muted)}
+    .l0{fill:var(--empty)}
+    .l1{fill:var(--a1);opacity:.30}
+    .l2{fill:var(--a1);opacity:.55}
+    .l3{fill:var(--a1);opacity:.80}
+    .l4{fill:var(--a2);opacity:.95}
+  </style>
+  <defs>
+    <linearGradient id="glassG" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" class="ga"/><stop offset="1" class="gb"/>
+    </linearGradient>
+    <linearGradient id="specG" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="var(--spec)" stop-opacity="0"/>
+      <stop offset=".5" stop-color="var(--spec)" stop-opacity=".7"/>
+      <stop offset="1" stop-color="var(--spec)" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="accG" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" class="c1"/><stop offset="1" class="c2"/>
+    </linearGradient>
+    <linearGradient id="areaG" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" class="c1" stop-opacity=".45"/>
+      <stop offset="1" class="c1" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="soft" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="46"/>
+    </filter>
+    <filter id="drop" x="-20%" y="-30%" width="140%" height="180%">
+      <feDropShadow dx="0" dy="2" stdDeviation="6" flood-color="#0b1020" flood-opacity="var(--shadow)"/>
+    </filter>
+  </defs>
+<g filter="url(#drop)"><rect x="0" y="0" width="425" height="206" rx="16" class="bg"/></g>
+  <clipPath id="clipact"><rect x="0" y="0" width="425" height="206" rx="16"/></clipPath>
+  <g clip-path="url(#clipact)">
+    <rect x="0" y="0" width="425" height="206" class="bg"/>
+    <g filter="url(#soft)"><circle cx="63.75" cy="24.72" r="78" class="blob1" opacity="var(--blob)"/><circle cx="382.5" cy="206" r="66" class="blob2" opacity="var(--blob)"/></g>
+    <rect x="0" y="0" width="425" height="206" fill="url(#glassG)"/>
+  </g>
+  <rect x="0.5" y="0.5" width="424" height="205" rx="15.5" class="hair"/>
+  <path d="M 16 0.5 H 409" class="spec"/>
+  <text x="22" y="30" class="ttl">Monthly rhythm</text>
+  <text x="22" y="48" class="sub">peak of 704 in Jul</text>
+  <clipPath id="clipArea"><rect x="0" y="64" width="425" height="108"/></clipPath>
+  <path d="M 22 172 H 403" class="grid"/>
+  <g clip-path="url(#clipArea)">
+    <path d="M 22 166.01 C 27.77 166.25, 45.09 167.15, 56.64 167.41 C 68.18 167.66, 79.73 167.34, 91.27 167.55 C 102.82 167.75, 114.36 170.89, 125.91 168.66 C 137.45 166.43, 149 157.89, 160.55 154.18 C 172.09 150.47, 183.64 145.6, 195.18 146.39 C 206.73 147.18, 218.27 159.24, 229.82 158.91 C 241.36 158.59, 252.91 152.63, 264.45 144.44 C 276 136.25, 287.55 113.58, 299.09 109.78 C 310.64 105.97, 322.18 127.57, 333.73 121.61 C 345.27 115.65, 356.82 73.42, 368.36 74 C 379.91 74.58, 397.23 116.57, 403 125.09 L 403 172 L 22 172 Z" fill="url(#areaG)"/>
+    <path d="M 22 166.01 C 27.77 166.25, 45.09 167.15, 56.64 167.41 C 68.18 167.66, 79.73 167.34, 91.27 167.55 C 102.82 167.75, 114.36 170.89, 125.91 168.66 C 137.45 166.43, 149 157.89, 160.55 154.18 C 172.09 150.47, 183.64 145.6, 195.18 146.39 C 206.73 147.18, 218.27 159.24, 229.82 158.91 C 241.36 158.59, 252.91 152.63, 264.45 144.44 C 276 136.25, 287.55 113.58, 299.09 109.78 C 310.64 105.97, 322.18 127.57, 333.73 121.61 C 345.27 115.65, 356.82 73.42, 368.36 74 C 379.91 74.58, 397.23 116.57, 403 125.09" fill="none" stroke="url(#accG)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <circle cx="368.36" cy="74" r="3" fill="var(--a2)"/>
+  <circle cx="368.36" cy="74" r="6" fill="none" stroke="var(--a2)" stroke-width="1" opacity=".45"/>
+  <text x="22" y="190" class="tick" text-anchor="middle">Sep</text><text x="125.91" y="190" class="tick" text-anchor="middle">Dec</text><text x="229.82" y="190" class="tick" text-anchor="middle">Mar</text><text x="333.73" y="190" class="tick" text-anchor="middle">Jun</text>
+</svg>
