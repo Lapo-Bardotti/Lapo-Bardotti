@@ -88,7 +88,7 @@
   <path d="M 229.5 0.5 H 397" class="spec"/>
   <text x="235.5" y="30" class="key">ACTIVE DAYS</text>
   <text x="235.5" y="68" class="val">199</text>
-  <text x="235.5" y="89" class="sub">of 368 tracked</text>
+  <text x="235.5" y="89" class="sub">of 369 tracked</text>
 <g filter="url(#drop)"><rect x="427" y="0" width="199.5" height="116" rx="16" class="bg"/></g>
   <clipPath id="clips2"><rect x="427" y="0" width="199.5" height="116" rx="16"/></clipPath>
   <g clip-path="url(#clips2)">
