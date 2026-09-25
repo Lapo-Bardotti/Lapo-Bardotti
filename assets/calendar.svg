@@ -447,6 +447,7 @@
   <rect x="824" y="108" width="12" height="12" rx="3" class="l1"><title>2026-09-22: 2</title></rect>
   <rect x="824" y="123" width="12" height="12" rx="3" class="l0"><title>2026-09-23: 0</title></rect>
   <rect x="824" y="138" width="12" height="12" rx="3" class="l0"><title>2026-09-24: 0</title></rect>
+  <rect x="824" y="153" width="12" height="12" rx="3" class="l0"><title>2026-09-25: 0</title></rect>
   <text x="697" y="204.5" class="tick" text-anchor="end">Less</text>
   <rect x="706" y="195" width="12" height="12" rx="3" class="l0"/><rect x="722" y="195" width="12" height="12" rx="3" class="l1"/><rect x="738" y="195" width="12" height="12" rx="3" class="l2"/><rect x="754" y="195" width="12" height="12" rx="3" class="l3"/><rect x="770" y="195" width="12" height="12" rx="3" class="l4"/>
   <text x="791" y="204.5" class="tick">More</text>
