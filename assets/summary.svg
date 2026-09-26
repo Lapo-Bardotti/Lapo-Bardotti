@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="840" height="116" viewBox="0 0 840 116" role="img" aria-label="2,661 contributions in the last 12 months">
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="116" viewBox="0 0 840 116" role="img" aria-label="2,745 contributions in the last 12 months">
   <style>
     :root{
       --bg:#ffffff; --fg:#0f172a; --muted:#6b7688;
@@ -75,7 +75,7 @@
   <rect x="0.5" y="0.5" width="198.5" height="115" rx="15.5" class="hair"/>
   <path d="M 16 0.5 H 183.5" class="spec"/>
   <text x="22" y="30" class="key">CONTRIBUTIONS</text>
-  <text x="22" y="68" class="val">2,661</text>
+  <text x="22" y="68" class="val">2,745</text>
   <text x="22" y="89" class="sub">last 12 months</text>
 <g filter="url(#drop)"><rect x="213.5" y="0" width="199.5" height="116" rx="16" class="bg"/></g>
   <clipPath id="clips1"><rect x="213.5" y="0" width="199.5" height="116" rx="16"/></clipPath>
@@ -87,8 +87,8 @@
   <rect x="214" y="0.5" width="198.5" height="115" rx="15.5" class="hair"/>
   <path d="M 229.5 0.5 H 397" class="spec"/>
   <text x="235.5" y="30" class="key">ACTIVE DAYS</text>
-  <text x="235.5" y="68" class="val">199</text>
-  <text x="235.5" y="89" class="sub">of 370 tracked</text>
+  <text x="235.5" y="68" class="val">202</text>
+  <text x="235.5" y="89" class="sub">of 371 tracked</text>
 <g filter="url(#drop)"><rect x="427" y="0" width="199.5" height="116" rx="16" class="bg"/></g>
   <clipPath id="clips2"><rect x="427" y="0" width="199.5" height="116" rx="16"/></clipPath>
   <g clip-path="url(#clips2)">
@@ -111,6 +111,6 @@
   <rect x="641" y="0.5" width="198.5" height="115" rx="15.5" class="hair"/>
   <path d="M 656.5 0.5 H 824" class="spec"/>
   <text x="662.5" y="30" class="key">SINCE 2019</text>
-  <text x="662.5" y="68" class="val">3,197</text>
+  <text x="662.5" y="68" class="val">3,281</text>
   <text x="662.5" y="89" class="sub">contributions total</text>
 </svg>
